@@ -63,8 +63,7 @@ def header():
         </div>
         """
     h_msg = """
-    To load a new dataset, refresh the browser. 
-    Source code [here](https://github.com/iamaziz/DataScope).
+    To load a new dataset, refresh the browser.
     """
     st5.button(label="Help", disabled=True, help=h_msg)
     with st.expander("README"):
