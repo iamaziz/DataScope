@@ -69,8 +69,6 @@ def plot_embeddings(df: pd.DataFrame) -> None:
         perplexity = min(30, features.shape[0] - 1)
         tsne_2d = TSNE(n_components=2, random_state=0, perplexity=perplexity)
         tsne_3d = TSNE(n_components=3, random_state=0, perplexity=perplexity)
-        import sklearn
-        st.write(sklearn.__version__)
         proj_2d = tsne_2d.fit_transform(features)
         proj_3d = tsne_3d.fit_transform(features)
 
