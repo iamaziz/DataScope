@@ -44,6 +44,7 @@ def plot_embeddings(df: pd.DataFrame) -> None:
             st.plotly_chart(fig_2d, use_container_width=True)
 
     features = df.loc[:, df.columns != "label"]
+    df["label"] = df["label"].apply(lambda x: x[:20])  # Cut labels to 20-char max for legend box
 
     # -- UMAP Plots -- #
     with st.spinner("fitting umap model ..."):
