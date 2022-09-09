@@ -1,0 +1,32 @@
+# UI
+streamlit==1.12.2
+streamlit-aggrid==0.3.2
+
+# sample_data processing
+pandas==1.4.2
+numpy==1.23.2
+openpyxl==3.0.10
+pandasql==0.7.3
+# modin
+
+# sample_data profiling
+streamlit-pandas-profiling==0.1.3
+pandas-profiling==3.2.0
+
+# visualization
+stvis==0.0.2
+pyvis==0.2.1
+umap-learn==0.5.3
+plotly==5.10.0
+
+# linting
+black==22.6.0
+
+# ML engineering
+sentence_transformers==2.2.2
+
+# Sample datasets
+pydataset==0.2.0
+
+# Similarity Tree
+annoy==1.17.1
