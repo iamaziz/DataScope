@@ -131,6 +131,11 @@ def load_dataset(container):
         uploaded = st.file_uploader(label=txt)
         choice = uploaded.name if uploaded else choice
 
+    with st2:
+        url = st.text_input("Or read from a url file (supported: .csv and .tsv)", placeholder="Enter URL")
+        if url:
+            return _read_csv(url)
+
     st.session_state.fit_columns = False if choice.endswith(".csv") else True
     st.session_state.file_name = choice
     params = st2.text_input("", placeholder="sep && skip_rows").split("&&")

@@ -10,7 +10,7 @@ TL;DR **Seeing tabular data from a different angle**
 
 ## Getting Started
 
-To start, go to [the deployed app](https://bit.ly/DataScope), and upload a new dataset or select from the sample
+To start, go to [the deployed app](https://bit.ly/DataScopeApp), and upload a new dataset or select from the sample
 datasets.
 
 
