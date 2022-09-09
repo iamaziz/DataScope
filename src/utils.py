@@ -46,10 +46,11 @@ def plot_embeddings(df: pd.DataFrame) -> None:
     features = df.loc[:, df.columns != "label"]
 
     # -- UMAP Plots -- #
-    umap_2d = UMAP(n_components=2, init="random", random_state=0)
-    umap_3d = UMAP(n_components=3, init="random", random_state=0)
-    proj_2d = umap_2d.fit_transform(features)
-    proj_3d = umap_3d.fit_transform(features)
+    with st.spinner("fitting umap model ..."):
+        umap_2d = UMAP(n_components=2, init="random", random_state=0)
+        umap_3d = UMAP(n_components=3, init="random", random_state=0)
+        proj_2d = umap_2d.fit_transform(features)
+        proj_3d = umap_3d.fit_transform(features)
 
     txt = """
     > ### [Uniform Manifold Approximation and Projection](https://johnhw.github.io/umap_primes/index.md.html)
@@ -63,11 +64,14 @@ def plot_embeddings(df: pd.DataFrame) -> None:
     st.markdown("<hr>", unsafe_allow_html=True)
 
     # -- TSNE Plots -- #
-    perplexity = min(30, features.shape[0] - 1)
-    tsne_2d = TSNE(n_components=2, random_state=0, perplexity=perplexity)
-    tsne_3d = TSNE(n_components=3, random_state=0, perplexity=perplexity)
-    proj_2d = tsne_2d.fit_transform(features)
-    proj_3d = tsne_3d.fit_transform(features)
+    with st.spinner("fitting tsne model ..."):
+        perplexity = min(30, features.shape[0] - 1)
+        tsne_2d = TSNE(n_components=2, random_state=0, perplexity=perplexity)
+        tsne_3d = TSNE(n_components=3, random_state=0, perplexity=perplexity)
+        import sklearn
+        st.write(sklearn.__version__)
+        proj_2d = tsne_2d.fit_transform(features)
+        proj_3d = tsne_3d.fit_transform(features)
 
     txt = """
     > ### [t-distributed Stochastic Neighbor Embedding](https://scikit-learn.org/stable/modules/manifold.html#t-sne)
