@@ -161,7 +161,7 @@ def load_dataset(container):
         path = "sample_data/music-artists-popularity/artist_truncated.csv"
         return _read_csv(path)
     if choice.startswith("Soccer"):
-        choice = "players_20.csv"
+        choice = "/players/players_20.csv"
 
     # st.session_state.trained_model = False
     try:
