@@ -561,6 +561,7 @@ class EmbeddingApp:
         # st2.caption("> Features (the selected columns)")
         # st2.dataframe(sentences)
         if len(sentences) > 1:
+            sentences = list(sentences)
             embedding = self.transform(sentences, selected_model)
         st.caption("> OUTPUT: feature vectors")
         st.write(embedding)
