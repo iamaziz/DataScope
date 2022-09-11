@@ -106,6 +106,7 @@ def load_dataset(container):
         "",
         "Arxiv ML Papers",
         "Periodic Table",
+        "Books",
         "Iris Flowers",
         "Movies",
         "Music Artists",
@@ -148,6 +149,8 @@ def load_dataset(container):
             return _read_excel(uploaded, skiprows=skip)
 
     # -- read file
+    if choice.startswith("Books"):
+         return _read_csv("./sample_data/goodreads-books/books.csv")
     if choice.startswith("Arxiv"):
         return _read_csv(f"./sample_data/arxiv_papers/arxivData_flat.csv")
     if choice.startswith("Movies"):
