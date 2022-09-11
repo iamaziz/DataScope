@@ -32,7 +32,7 @@ def header():
         
         <div style="text-align: center; border-style: outset">
         
-        TL;DR **Seeing tabular sample_data from a different angle**
+        TL;DR **Seeing tabular data from a different angle**
          
         <a style="font-size: 5px" href="https://media.giphy.com/media/ftAyb0CG1FNAIZt4SO/giphy.gif"><img src="https://media.giphy.com/media/ftAyb0CG1FNAIZt4SO/giphy.gif" /></a>
         
