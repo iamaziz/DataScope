@@ -106,7 +106,6 @@ def load_dataset(container):
         "",
         "Arxiv ML Papers",
         "Periodic Table",
-        "Companies",
         "Iris Flowers",
         "Movies",
         "Music Artists",
@@ -151,8 +150,6 @@ def load_dataset(container):
     # -- read file
     if choice.startswith("Arxiv"):
         return _read_csv(f"./sample_data/arxiv_papers/arxivData_flat.csv")
-    if choice.startswith("Companies"):
-        return _read_csv("./sample_data/companies-dataset/companies_sorted_SMALL.csv")
     if choice.startswith("Movies"):
         url = "https://raw.githubusercontent.com/reisanar/datasets/master/HollywoodMovies.csv"
         return _read_csv(url)
