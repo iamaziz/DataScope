@@ -209,9 +209,9 @@ def _search_dataframe(df, term: str) -> pd.DataFrame:
 
 
 def st_query_dataframe(df, key):
-    if query := st.text_input(
+    if query := st.text_area(
             "",
-            placeholder="""select * form df limit 10;""",
+            placeholder="""e.g. select * form df limit 10;""",
             help="The SQL query to execute against the dataframe below (by default: 'df' is the table name)",
             value="",
             key=key,
