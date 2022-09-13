@@ -147,6 +147,8 @@ def load_dataset(container):
             return _read_csv(uploaded, sep=sep, skiprows=skip)
         if uploaded.name.endswith(".xlsx"):
             return _read_excel(uploaded, skiprows=skip)
+        st2.warning("Unable to read file ⚠️")
+        st.stop()
 
     # -- read file
     if choice.startswith("Books"):
