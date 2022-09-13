@@ -138,8 +138,8 @@ def load_dataset(container):
 
     st.session_state.fit_columns = False if choice.endswith(".csv") else True
     st.session_state.file_name = choice
-    params = st2.text_input("", placeholder="sep && skip_rows").split("&&")
     if uploaded:
+        params = st2.text_input("", placeholder="sep && skip_rows").split("&&")
         sep = params[0].strip()
         sep = sep if sep else ","
         skip = 0 if len(params) < 2 else int(params[1].strip())
