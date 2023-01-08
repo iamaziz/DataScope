@@ -50,10 +50,6 @@ def header():
         > 3. Dataset Profiler
         > 4. Customized _Feature Embeddings_ (the output of number 2 above)
         
-        `TODO: more docs .. to come`
-        
-        > <sub> `<️WIP>⚠️ ... can be buggy on some edge cases; however, it works.`</sub>
-        
         <hr>
         
         **Getting Started**
