@@ -12,8 +12,3 @@ TL;DR **Seeing tabular data from a different angle**
 
 To start, go to [the deployed app](https://bit.ly/DataScopeApp), and upload a new dataset or select from the sample
 datasets.
-
-
-<sub>⚠️️WIP️️ ... can be buggy on some edge cases; however, it works.</sub>
-
-<br>
