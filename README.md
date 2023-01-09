@@ -10,5 +10,7 @@ TL;DR **Seeing tabular data from a different angle**
 
 ## Getting Started
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://iamaziz-datascope-app-ekta8m.streamlit.app/)
+
 To start, go to [the deployed app](https://bit.ly/DataScopeApp), and upload a new dataset or select from the sample
 datasets.
