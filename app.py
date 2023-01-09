@@ -43,10 +43,10 @@ def header():
         **What?**
         
         This tool analyzes a tabular dataset to
-        > 1) Understand relationships between variables "columns" (**Directed Graphs**)
-        > 2) Discover Patterns / Semantic Search  (**Semantic Similarity Space**)
+        > 1) create Directed Graphs between columns
+        > 2) create customized Semantic Similarity Search
 
-        Also, it provides
+        and
         > 3. Dataset Profiler
         > 4. Customized _Feature Embeddings_ (the output of number 2 above)
         
