@@ -43,8 +43,8 @@ def header():
         **What?**
         
         This tool analyzes a tabular dataset to
-        > 1) create Directed Graphs between columns
-        > 2) create customized Semantic Similarity Search
+        > 1) Create Directed Graphs between columns
+        > 2) Create customized Semantic Similarity Search
 
         and
         > 3. Dataset Profiler
