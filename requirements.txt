@@ -1,6 +1,7 @@
 # UI
 streamlit==1.12.2
 streamlit-aggrid==0.3.2
+pydantic-settings
 
 # sample_data processing
 pandas==1.4.2
