@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd  # TODO: import modin.pandas as pd
 import streamlit as st
 from annoy import AnnoyIndex
-from pandas_profiling import ProfileReport
+#from pandas_profiling import ProfileReport
 from pandasql import sqldf
 from pydataset import data
 from pyvis.network import Network
@@ -304,8 +304,8 @@ class UI:
                 Helper.tensorflow_projector_frame()
             if st2.checkbox("UPLOAD PREVIOUS RESULTS"):
                 SimilaritySearch(df_=df, external_files=True, st_key="upload")
-        with st.expander("DATA PROFILING REPORT"):
-            DataProfiler(df)
+        #with st.expander("DATA PROFILING REPORT"):
+        #    DataProfiler(df)
 
 
 class NetworkGraphizer:
